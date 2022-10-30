@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="App">
+   
+    <ContenedorGlobal1 />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import ContenedorGlobal1 from './components/Contenedor/ContenedorGlobal.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ContenedorGlobal1
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+
+body {
+width: auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  max-width: 1500px;
+  width: 100%;
+  
+}
+
+body>div {
+  width: inherit;
 }
 </style>
